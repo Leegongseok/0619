@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var count=0;
+            var image=document.getElementById('image');
+            var frames=[
+            'image/run1.PNG','image/run2.PNG','image/run3.PNG','image/run4.PNG',
+            'image/run5.PNG','image/run6.PNG','image/run7.PNG','image/run8.PNG',
+            ];
+            setInterval(function(){
+                image.src=frames[count % frames.length];
+                count=count+1;
+            },1000/20);
+        };
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>

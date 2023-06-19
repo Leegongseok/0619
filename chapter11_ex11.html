@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class=""drawer>
+    <div class="drawer">
         <h1>Logo</h1>
-        <div class=""drawer-menu>
+        <div class="drawer-menu">
             <p>Esse pariatur</p>
         </div>
     </div>
@@ -20,9 +20,11 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script>
-        $('body').click(function( ){
-
-        })
+       
+        $('body').click(function(){
+            $(".drawer-menu").slideToggle("slow")
+        });
+   
     </script>
     <style>
         *{
